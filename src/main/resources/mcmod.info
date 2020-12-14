@@ -1,0 +1,16 @@
+[
+{
+  "modid": "landofrails",
+  "name": "LandOfRails",
+  "description": "Adds some additional Blocks",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["SeltixSub"],
+  "credits": "Thanks to mom and dad for.. idk.. raising me?",
+  "logoFile": "assets/landofrails/logo.png",
+  "screenshots": [],
+  "dependencies": []
+}
+]

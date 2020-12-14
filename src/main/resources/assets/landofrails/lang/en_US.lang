@@ -1,0 +1,75 @@
+# Creative Tabs
+itemGroup.blocktab=LandOfRails : Blocks
+itemGroup.itemtab=LandOfRails : Items
+itemGroup.decorativeblockstab=LandOfRails : Decorative Blocks
+
+# Items
+item.SmallLogo.name=LandOfRails Logo
+item.MagnifyingGlass.name=Magnifying Glass
+
+# Blocks
+tile.asphaltToRC.name=Asphalt
+tile.asphaltSlabToRC.name=Asphalt Slab
+tile.asphaltCC.name=Asphalt Corner
+tile.asphaltSlabCC.name=Asphalt Corner Slab
+
+tile.asphaltYellowArrow.name=Asphalt Yellow Arrow
+tile.asphaltYellowArrowSide.name=Asphalt Yellow Side Arrow
+tile.asphaltYellowDoubleArrow.name=Asphalt Yellow Double Arrow
+tile.asphaltWhiteArrow.name=Asphalt White Arrow
+tile.asphaltWhiteArrowSide.name=Asphalt White Side Arrow
+tile.asphaltWhiteDoubleArrow.name=Asphalt White Double Arrow
+
+tile.asphaltEX.name=Asphalt White EX
+tile.asphaltIT.name=Asphalt White IT
+tile.asphaltST.name=Asphalt White ST
+tile.asphaltOP.name=Asphalt White OP
+
+tile.asphaltLineYellow.name=Asphalt Yellow Line
+tile.asphaltLineWhite.name=Asphalt White Line
+tile.asphaltInnerDiagonalYellow.name=Asphalt Yellow Inner Diagonal Line
+tile.asphaltInnerDiagonalWhite.name=Asphalt White Inner Diagonal Line
+tile.asphaltOuterDiagonalYellow.name=Asphalt Yellow Outer Diagonal Line
+tile.asphaltOuterDiagonalWhite.name=Asphalt White Outer Diagonal Line
+tile.asphaltThickDiagonalYellow.name=Asphalt Yellow Thick Diagonal Line
+tile.asphaltThickDiagonalWhite.name=Asphalt White Thick Diagonal Line
+tile.asphaltThickLineYellow.name=Asphalt Yellow Thick Line
+tile.asphaltThickLineWhite.name=Asphalt White Thick Line
+
+tile.asphaltCornerYellow.name=Asphalt Yellow Corner
+tile.asphaltCornerWhite.name=Asphalt White Corner
+
+tile.asphaltSLXDoubleCrossYellow.name=Asphalt Yellow Double Cross SLX
+tile.asphaltSLXDoubleCrossWhite.name=Asphalt White Double Cross SLX
+tile.asphaltSLXSideCrossYellow.name=Asphalt Yellow Side Cross SLX
+tile.asphaltSLXSideCrossWhite.name=Asphalt White Side Cross SLX
+tile.asphaltSLYCrossYellow.name=Asphalt Yellow Cross SLY
+tile.asphaltSLYCrossWhite.name=Asphalt White Cross SLY
+tile.asphaltSLYFullCrossYellow.name=Asphalt Yellow Full Cross SLY
+tile.asphaltSLYFullCrossWhite.name=Asphalt White Full Cross SLY
+tile.asphaltSLYSideCrossYellow.name=Asphalt Yellow Side Cross SLY
+tile.asphaltSLYSideCrossWhite.name=Asphalt White Side Cross SLY
+
+tile.colouredGravel.name=Coloured Gravel
+tile.bark1.name=Bark
+tile.wall1.name=Wall
+tile.wall2.name=Wall
+tile.stone1.name=Stone
+tile.bricks1.name=Bricks
+tile.sand1.name=Sand
+tile.gravel1.name=Gravel
+tile.planks1.name=Planks
+tile.planks2.name=Planks
+tile.planks3.name=Planks
+tile.planks4.name=Planks
+tile.painting1.name=Painting
+tile.painting2.name=Painting
+tile.rain1.name=Rain
+tile.fabric1.name=Fabric
+tile.fabric2.name=Fabric
+tile.crystals1.name=Crystal
+tile.cardboard1.name=Cardboard
+tile.concrete1.name=Concrete
+tile.concrete2.name=Concrete
+tile.concrete3.name=Concrete
+tile.concrete4.name=Concrete
