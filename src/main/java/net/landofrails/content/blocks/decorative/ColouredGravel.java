@@ -2,10 +2,9 @@ package net.landofrails.content.blocks.decorative;
 
 import java.util.List;
 
-import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 
-public class ColouredGravel extends Block implements IDecorativeBlock {
+public class ColouredGravel extends ADecorativeBlock {
 
 	public ColouredGravel() {
 		super(Material.sand);

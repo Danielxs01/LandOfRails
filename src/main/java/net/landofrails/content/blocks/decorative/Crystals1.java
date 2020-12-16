@@ -2,10 +2,9 @@ package net.landofrails.content.blocks.decorative;
 
 import java.util.List;
 
-import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 
-public class Crystals1 extends Block implements IDecorativeBlock {
+public class Crystals1 extends ADecorativeBlock {
 
 	public Crystals1() {
 		super(Material.rock);

@@ -42,6 +42,7 @@ import net.landofrails.content.blocks.asphalt.slabs.text.SlabAsphaltEX;
 import net.landofrails.content.blocks.asphalt.slabs.text.SlabAsphaltIT;
 import net.landofrails.content.blocks.asphalt.slabs.text.SlabAsphaltOP;
 import net.landofrails.content.blocks.asphalt.slabs.text.SlabAsphaltST;
+import net.landofrails.content.blocks.decorative.ADecorativeBlock;
 import net.landofrails.content.blocks.decorative.ADecorativeItemBlock;
 import net.landofrails.content.blocks.decorative.Bark1;
 import net.landofrails.content.blocks.decorative.Bricks1;
@@ -64,6 +65,7 @@ import net.landofrails.content.blocks.decorative.Planks3;
 import net.landofrails.content.blocks.decorative.Planks4;
 import net.landofrails.content.blocks.decorative.Rain1;
 import net.landofrails.content.blocks.decorative.Sand1;
+import net.landofrails.content.blocks.decorative.Sandstone1;
 import net.landofrails.content.blocks.decorative.Stone1;
 import net.landofrails.content.blocks.decorative.Wall1;
 import net.landofrails.content.blocks.decorative.Wall2;
@@ -150,6 +152,16 @@ public class CustomBlocks {
 		blocks.put("concrete2", new Concrete2());
 		blocks.put("concrete3", new Concrete3());
 		blocks.put("concrete4", new Concrete4());
+		blocks.put("sandstone1", new Sandstone1());
+
+		Map<String, Block> additionalBlocks = new HashMap<>();
+		for (Entry<String, Block> entry : blocks.entrySet()) {
+			if (entry.getValue() instanceof ADecorativeBlock) {
+				ADecorativeBlock db = (ADecorativeBlock) entry.getValue();
+				additionalBlocks.putAll(db.getAdditionalBlocks(entry.getKey(), db));
+			}
+		}
+		blocks.putAll(additionalBlocks);
 
 		for (Entry<String, Block> entry : blocks.entrySet())
 			setName(entry.getValue(), entry.getKey());
@@ -167,8 +179,14 @@ public class CustomBlocks {
 
 	public static void setName(Block block, String name) {
 		block.setBlockName(name);
-		block.setBlockTextureName(Constants.MODID + ":" + name);
-		block.setCreativeTab(block instanceof IDecorativeBlock ? CustomTabs.decorativeBlocksTab : CustomTabs.blockTab);
+		if (block instanceof ADecorativeBlock) {
+			block.setBlockTextureName(Constants.MODID + ":decorative/" + name);
+		} else {
+			block.setBlockTextureName(Constants.MODID + ":" + name);
+		}
+		if (block.getCreativeTabToDisplayOn() == null)
+			block.setCreativeTab(
+					block instanceof ADecorativeBlock ? CustomTabs.decorativeBlocksTab : CustomTabs.blockTab);
 	}
 
 	public static Map<String, Block> getBlocks() {

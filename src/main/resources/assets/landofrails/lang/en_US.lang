@@ -1,7 +1,7 @@
 # Creative Tabs
-itemGroup.blocktab=LandOfRails : Blocks
-itemGroup.itemtab=LandOfRails : Items
-itemGroup.decorativeblockstab=LandOfRails : Decorative Blocks
+itemGroup.blocktab=LoR : Blocks
+itemGroup.itemtab=LoR : Items
+itemGroup.decorativeblockstab=LoR : Decorative Blocks
 
 # Items
 item.SmallLogo.name=LandOfRails Logo
@@ -73,3 +73,4 @@ tile.concrete1.name=Concrete
 tile.concrete2.name=Concrete
 tile.concrete3.name=Concrete
 tile.concrete4.name=Concrete
+tile.sandstone1.name=Sandstone
