@@ -184,9 +184,7 @@ public class CustomBlocks {
 		} else {
 			block.setBlockTextureName(Constants.MODID + ":" + name);
 		}
-		if (block.getCreativeTabToDisplayOn() == null)
-			block.setCreativeTab(
-					block instanceof ADecorativeBlock ? CustomTabs.decorativeBlocksTab : CustomTabs.blockTab);
+		block.setCreativeTab(block instanceof IDecorativeBlock ? CustomTabs.decorativeBlocksTab : CustomTabs.blockTab);
 	}
 
 	public static Map<String, Block> getBlocks() {
