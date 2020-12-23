@@ -7,6 +7,8 @@ itemGroup.decorativeblockstab=LoR : Decorative Blocks
 item.SmallLogo.name=LandOfRails Logo
 item.MagnifyingGlass.name=Magnifying Glass
 
+item.itemMasks.name=Mask
+
 # Blocks
 tile.asphaltToRC.name=Asphalt
 tile.asphaltSlabToRC.name=Asphalt Slab

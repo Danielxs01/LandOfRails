@@ -8,6 +8,7 @@ import net.landofrails.LandOfRails;
 import net.landofrails.content.blocks.CustomBlocks;
 import net.landofrails.content.items.CustomItems;
 import net.landofrails.content.network.PacketDispatcher;
+import net.landofrails.content.recipes.CustomRecipes;
 import net.minecraft.entity.player.EntityPlayer;
 
 public class CommonProxy {
@@ -17,8 +18,11 @@ public class CommonProxy {
 
 		CustomItems.init();
 		CustomItems.register();
+
 		CustomBlocks.init();
 		CustomBlocks.register();
+
+		CustomRecipes.register();
 
 		PacketDispatcher.registerPackets();
 	}

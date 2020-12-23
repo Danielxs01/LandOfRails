@@ -20,6 +20,8 @@ import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.IIcon;
+import net.minecraft.util.MovingObjectPosition;
+import net.minecraft.world.World;
 
 public abstract class ADecorativeBlock extends Block implements IDecorativeBlock {
 
@@ -27,6 +29,7 @@ public abstract class ADecorativeBlock extends Block implements IDecorativeBlock
 
 	protected ADecorativeBlock(Material m) {
 		super(m);
+		this.setLightLevel(0.0f);
 	}
 
 	public Map<String, Block> getAdditionalBlocks(String name, ADecorativeBlock ab) {
@@ -50,6 +53,15 @@ public abstract class ADecorativeBlock extends Block implements IDecorativeBlock
 		public DecorativeSlab(ADecorativeBlock b) {
 			super(false, b.getMaterial());
 			this.b = b;
+
+			this.setLightOpacity(255);
+			this.setLightLevel(0.0f);
+
+		}
+
+		@Override
+		public boolean renderAsNormalBlock() {
+			return false;
 		}
 
 		@Override
@@ -73,6 +85,11 @@ public abstract class ADecorativeBlock extends Block implements IDecorativeBlock
 		}
 
 		@Override
+		public ItemStack getPickBlock(MovingObjectPosition target, World world, int x, int y, int z) {
+			return new ItemStack(this);
+		}
+
+		@Override
 		public void getDescription(List<String> desc) {
 			b.getDescription(desc);
 			desc.add("Slab");
@@ -88,6 +105,14 @@ public abstract class ADecorativeBlock extends Block implements IDecorativeBlock
 			super(b, 0);
 			this.b = b;
 			setCreativeTab(CustomTabs.decorativeBlocksTab);
+			this.setLightOpacity(255);
+			this.setLightLevel(0.0f);
+
+		}
+
+		@Override
+		public boolean renderAsNormalBlock() {
+			return false;
 		}
 
 		@Override
@@ -116,6 +141,19 @@ public abstract class ADecorativeBlock extends Block implements IDecorativeBlock
 			super(b);
 			this.b = b;
 			setCreativeTab(CustomTabs.decorativeBlocksTab);
+			this.setLightOpacity(255);
+			this.setLightLevel(0.1f);
+
+		}
+
+		@Override
+		public boolean renderAsNormalBlock() {
+			return false;
+		}
+
+		@Override
+		public boolean isOpaqueCube() {
+			return false;
 		}
 
 		@Override
@@ -150,6 +188,14 @@ public abstract class ADecorativeBlock extends Block implements IDecorativeBlock
 			super(Constants.MODID + ":decorative/" + name, b.getMaterial());
 			this.b = b;
 			setCreativeTab(CustomTabs.decorativeBlocksTab);
+			this.setLightOpacity(255);
+			this.setLightLevel(0.0f);
+
+		}
+
+		@Override
+		public boolean renderAsNormalBlock() {
+			return false;
 		}
 
 		@Override
@@ -178,6 +224,14 @@ public abstract class ADecorativeBlock extends Block implements IDecorativeBlock
 			super();
 			this.b = b;
 			setCreativeTab(CustomTabs.decorativeBlocksTab);
+			this.setLightOpacity(255);
+			this.setLightLevel(0.0f);
+
+		}
+
+		@Override
+		public boolean renderAsNormalBlock() {
+			return false;
 		}
 
 		@Override
@@ -206,6 +260,14 @@ public abstract class ADecorativeBlock extends Block implements IDecorativeBlock
 			super(true);
 			this.b = b;
 			setCreativeTab(CustomTabs.decorativeBlocksTab);
+			this.setLightOpacity(255);
+			this.setLightLevel(0.0f);
+
+		}
+
+		@Override
+		public boolean renderAsNormalBlock() {
+			return false;
 		}
 
 		@Override
@@ -233,6 +295,14 @@ public abstract class ADecorativeBlock extends Block implements IDecorativeBlock
 			super();
 			this.b = b;
 			setCreativeTab(CustomTabs.decorativeBlocksTab);
+			this.setLightOpacity(255);
+			this.setLightLevel(0.0f);
+
+		}
+
+		@Override
+		public boolean renderAsNormalBlock() {
+			return false;
 		}
 
 		@Override
@@ -267,6 +337,14 @@ public abstract class ADecorativeBlock extends Block implements IDecorativeBlock
 			super(Constants.MODID + ":decorative/" + name, b.getMaterial(), Sensitivity.everything);
 			this.b = b;
 			setCreativeTab(CustomTabs.decorativeBlocksTab);
+			this.setLightOpacity(255);
+			this.setLightLevel(0.0f);
+
+		}
+
+		@Override
+		public boolean renderAsNormalBlock() {
+			return false;
 		}
 
 		@Override
