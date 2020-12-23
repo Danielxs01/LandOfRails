@@ -11,7 +11,7 @@
 .mtj.tmp/
 
 # Eclipse
-/eclipse
+/eclipse/
 
 # Package Files #
 *.jar
